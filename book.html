@@ -3,17 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Book a Visit | Petals and Pasture</title>
-<meta name="description" content="Send a booking inquiry for cow cuddles, events, weddings, photoshoots or farm stand flowers.">
-<link rel="icon" href="assets/cosmos-head.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+<title>Petals and Pasture: Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 <style>
+
+img{max-width:100%}
+
 body{margin:0}
 .navlink{color:#463629;text-decoration:none;font-weight:500;font-size:15px;padding:8px 2px;border-bottom:2px solid transparent}
 .navlink:hover{color:#8B5A3C;border-bottom-color:#E3B4A6}
 .navbtn:hover{background:#8E4F4A !important}
+.pp-burger{display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;border:1.5px solid #DCCDB6;background:#FFFFFF;color:#463629;cursor:pointer;padding:0}
+@media (max-width: 860px){
+.pp-navrow{padding:10px 20px !important;gap:10px 12px !important}
+.pp-burger{display:inline-flex}
+.pp-links{display:none !important;order:3;flex:1 1 100%;flex-direction:column;align-items:stretch !important;gap:0 !important;border-top:1px solid #EADFCB;padding:4px 0 8px}
+.pp-links.open{display:flex !important}
+.pp-links .navlink{font-size:17px;padding:13px 4px;border-bottom:1px solid #F1E8D9}
+.pp-logo img{height:40px !important}
+.pp-name{font-size:19px !important}
+.pp-bar{font-size:12px !important;padding:7px 14px !important}
+}
+@media (max-width: 420px){
+.pp-logo img{display:none}
+.pp-name{font-size:17px !important}
+.pp-tag{font-size:10px !important;letter-spacing:0.16em !important}
+.navbtn{font-size:14px !important;padding:10px 14px !important}
+}
+
+
+body{margin:0}
 .flink{color:#FFFFFF;text-decoration:none}
 .flink:hover{text-decoration:underline}
+@media (max-width: 640px){.m-foot{padding:56px 20px 24px !important}.m-foot .flink{display:inline-block;padding:4px 0}}
+
+
 body{margin:0;background:#FDF6EC}
 a{color:#8B5A3C}a:hover{color:#5B4636}
 .moo{position:absolute;height:auto;pointer-events:none;z-index:2}
@@ -24,67 +49,86 @@ a{color:#8B5A3C}a:hover{color:#5B4636}
 .sendbtn:hover{background:#8E4F4A !important}
 @media (max-width: 1360px){.moo.side{width:52px !important}}
 @media (max-width: 1000px){.moo.side{display:none}}
+
+@media (max-width: 640px){
+.m-gutter{padding-left:20px !important;padding-right:20px !important}
+.m-hero{height:260px !important}
+.m-hero-half{height:124px !important}
+.m-box{padding:26px 20px !important}
+.m-box > .moo{width:60px !important;top:-44px !important}
+h1{font-size:38px !important;line-height:1.08 !important}
+[style*="font-size: 19px"]{font-size:17px !important}
+.m-cta-row > a{flex:1 1 100%;text-align:center}
+}
+
 </style>
 </head>
 <body>
 <div style="width: 100%; position: relative; overflow: hidden; background: #FDF6EC; font-family: 'DM Sans', sans-serif; color: #463629">
+
 <div style="width: 100%; font-family: 'DM Sans', sans-serif; color: #463629; background: #FDF6EC">
-<div style="background: #687A4E; color: #FFFFFF; text-align: center; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; padding: 8px 16px">Now booking cow cuddles, events, weddings and photoshoots for Spring 2027</div>
+<div class="pp-bar" style="background: #687A4E; color: #FFFFFF; text-align: center; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; padding: 8px 16px">Now booking cow cuddles, events, weddings and photoshoots for Spring 2027</div>
 <nav aria-label="Main" style="border-bottom: 1px solid #EADFCB">
-<div style="max-width: 1200px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 28px">
-<a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #463629">
-<img src="assets/logo-brown.png" alt="" style="height: 48px; width: auto">
+<div class="pp-navrow" style="max-width: 1200px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 28px">
+<a class="pp-logo" href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #463629">
+<img src="images/f7c5896b68d995a0466b58aa173a6088.png" alt="" style="height: 48px; width: auto">
 <span style="display: flex; flex-direction: column; line-height: 1.1">
-<span style="font-family: Fraunces, serif; font-weight: 800; font-size: 22px">Petals and Pasture</span>
-<span style="font-size: 11px; font-weight: 700; letter-spacing: 0.22em; color: #4F5E37">PENTICTON, BC</span>
+<span class="pp-name" style="font-family: Fraunces, serif; font-weight: 800; font-size: 22px">Petals and Pasture</span>
+<span class="pp-tag" style="font-size: 11px; font-weight: 700; letter-spacing: 0.22em; color: #4F5E37">PENTICTON, BC</span>
 </span>
 </a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px">
-<a class="navlink" href="cow-cuddles.html" style="">Cow Cuddles</a>
-<a class="navlink" href="events.html" style="">Events</a>
-<a class="navlink" href="weddings.html" style="">Weddings</a>
-<a class="navlink" href="photoshoots.html" style="">Photoshoots</a>
-<a class="navlink" href="farm-stand.html" style="">Farm Stand</a>
-<a class="navlink" href="about.html" style="">About</a>
-<a class="navlink" href="faq.html" style="">FAQ</a>
-<a class="navbtn" href="book.html" style="background: #A8615B; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book now</a>
+<div class="pp-links" id="pp-menu" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px">
+<a class="navlink" href="cow-cuddles.html">Cow Cuddles</a>
+<a class="navlink" href="events.html">Events</a>
+<a class="navlink" href="weddings.html">Weddings</a>
+<a class="navlink" href="photoshoots.html">Photoshoots</a>
+<a class="navlink" href="farm-stand.html">Farm Stand</a>
+<a class="navlink" href="about.html">About</a>
+<a class="navlink" href="faq.html">FAQ</a>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<a class="navbtn" href="book.html" style="background: #A8615B; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; white-space: nowrap">Book now</a>
+<button type="button" class="pp-burger" aria-label="Menu" aria-controls="pp-menu" aria-expanded="false" onclick="ppMenu(this)">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
 </div>
 </div>
 </nav>
 </div>
 
-<img class="moo side" src="assets/cow-black-lying.svg" alt="" style="right: 1.5%; top: 300px; width: 70px">
-<img class="moo side flip" src="assets/cow-ginger-crown.svg" alt="" style="left: 1.2%; top: 900px; width: 80px">
-<img class="moo side" src="assets/cow-silver-crown.svg" alt="" style="right: 1.5%; top: 1060px; width: 72px">
 
-<main style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 72px; display: flex; flex-direction: column; gap: 40px">
+<img class="moo side" src="images/0e0c513007169e726d117e7182bddc35.svg" alt="" style="right: 1.5%; top: 300px; width: 70px">
+<img class="moo side flip" src="images/531732af0cabf6b1fffe98a11ad7f4e9.svg" alt="" style="left: 1.2%; top: 900px; width: 80px">
+<img class="moo side" src="images/c129277b8fd03ad9826955c24b9ee497.svg" alt="" style="right: 1.5%; top: 1060px; width: 72px">
+
+<main class="m-gutter" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 72px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px">
 <div style="font-weight: 700; font-size: 13px; letter-spacing: 0.22em; color: #4F5E37">BOOK OR ASK A QUESTION</div>
 <h1 style="margin: 0; font-family: Fraunces, serif; font-weight: 800; font-size: clamp(40px, 4.8vw, 58px); line-height: 1.04; color: #3E2F24">Let's get you on the calendar</h1>
 <p style="margin: 0; font-size: 18px; line-height: 1.6">Book your visit online in a couple of minutes using the button below. Planning a wedding, a party, or something custom? Send the form instead and we'll get back to you within [RESPONSE TIME].</p>
 </div>
 
-<div style="background: #A8615B; border-radius: 26px; padding: 32px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between">
-<div style="display: flex; flex-direction: column; gap: 6px; max-width: 640px">
-<h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 800; font-size: 30px; color: #FFFFFF">Book your visit online</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #F7DCD5">Cow cuddles, farm visits and photoshoots. Pick your time and you're on the calendar.</p>
+<div style="background: #A8615B; border-radius: 26px; padding: 36px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: Fraunces, serif; font-weight: 800; font-size: 30px; color: #FFFFFF">Book your visit online</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #F7DCD5; max-width: 520px">Pick your experience and a time that suits you. It takes about two minutes.</p>
 </div>
-<a href="https://petalsandpasture.setmore.com/emilyphillips" target="_blank" rel="noopener" style="background: #FFFFFF; color: #A8615B; text-decoration: none; font-weight: 700; font-size: 16px; padding: 15px 28px; border-radius: 999px; display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box">Book on Setmore</a>
+<a href="https://petalsandpasture.setmore.com/emilyphillips" target="_blank" rel="noopener" style="background: #FFFFFF; color: #A8615B; text-decoration: none; font-weight: 700; font-size: 16px; padding: 15px 28px; border-radius: 999px; min-height: 48px; display: inline-flex; align-items: center">Book on Setmore</a>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
-<div style="flex: 1 1 560px; min-width: 0; background: #FFFFFF; border: 1.5px solid #EFE4D2; border-radius: 26px; padding: 32px; position: relative">
-<img class="moo" src="assets/cow-roan-peek.svg" alt="" style="right: 40px; top: -62px; width: 84px">
-<div id="inquiry-thanks" hidden>
+<div class="m-box" style="flex: 1 1 560px; min-width: 0; background: #FFFFFF; border: 1.5px solid #EFE4D2; border-radius: 26px; padding: 32px; position: relative">
+<img class="moo" src="images/584ce1c45739b4f7e1e5cbb645d7c41c.svg" alt="" style="right: 40px; top: -62px; width: 84px">
+<div id="pp-sent" hidden>
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding: 40px 10px">
-<img src="assets/bouquet.svg" alt="" style="width: 140px; height: auto">
+<img src="images/40e14de160bacb213f67d4ffa00f4a08.svg" alt="" style="width: 140px; height: auto">
 <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 800; font-size: 32px; color: #3E2F24">Thank you!</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 420px">We got your note and we'll be in touch within [RESPONSE TIME]. The cows say moo.</p>
-<button type="button" data-reset style="font: inherit; font-weight: 700; font-size: 15px; background: none; border: 2px solid #687A4E; color: #4F5E37; border-radius: 999px; padding: 11px 20px; cursor: pointer; min-height: 44px">Send another</button>
+<button type="button" onclick="ppReset()" style="font: inherit; font-weight: 700; font-size: 15px; background: none; border: 2px solid #687A4E; color: #4F5E37; border-radius: 999px; padding: 11px 20px; cursor: pointer; min-height: 44px">Send another</button>
 </div>
 </div>
-<div id="inquiry-form">
-<form style="display: flex; flex-direction: column; gap: 18px">
+<div id="pp-form">
+<form onsubmit="ppSend();return false" style="display: flex; flex-direction: column; gap: 18px">
 <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 800; font-size: 28px; color: #3E2F24">Booking inquiry</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
 <label class="field">Your name<input type="text" name="name" autocomplete="name"></label>
@@ -108,7 +152,7 @@ a{color:#8B5A3C}a:hover{color:#5B4636}
 <label class="field">Event location (if we're coming to you)<input type="text" name="location" placeholder="Town or venue"></label>
 <label class="field">Anything else we should know?<textarea name="message" rows="4"></textarea></label>
 <label style="display: flex; gap: 10px; align-items: center; font-size: 15px"><input type="checkbox" name="bouquet" style="width: 20px; height: 20px; accent-color: #A8615B">Add a fresh bouquet for $25</label>
-<button type="button" class="sendbtn" data-send style="align-self: flex-start; font: inherit; font-weight: 700; font-size: 16px; background: #A8615B; color: #FFFFFF; border: none; border-radius: 999px; padding: 15px 28px; cursor: pointer; min-height: 48px">Send inquiry</button>
+<button type="button" class="sendbtn" onclick="ppSend()" style="align-self: flex-start; font: inherit; font-weight: 700; font-size: 16px; background: #A8615B; color: #FFFFFF; border: none; border-radius: 999px; padding: 15px 28px; cursor: pointer; min-height: 48px">Send inquiry</button>
 </form>
 </div>
 </div>
@@ -138,13 +182,14 @@ a{color:#8B5A3C}a:hover{color:#5B4636}
 </div>
 </main>
 
+
 <footer style="width: 100%; font-family: 'DM Sans', sans-serif; color: #FFFFFF; position: relative; background: #FDF6EC">
-<img src="assets/garland.svg" alt="" style="display: block; width: 100%; max-width: 1200px; height: auto; margin: 0 auto -34px; position: relative; z-index: 1">
-<div style="background: #687A4E; padding: 64px 32px 28px">
+<img src="images/3fafb8c314ac85a25d91fa32edd881e5.svg" alt="" style="display: block; width: 100%; max-width: 1200px; height: auto; margin: 0 auto -34px; position: relative; z-index: 1">
+<div class="m-foot" style="background: #687A4E; padding: 64px 32px 28px">
 <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 12px">
-<img src="assets/logo-white.png" alt="Petals and Pasture logo: a mini Highland cow lying in wildflowers" style="width: 180px; height: auto">
+<img src="images/b97d8c8f7e147a26eed6d9566d7cc71e.png" alt="Petals and Pasture logo: a mini Highland cow lying in wildflowers" style="width: 180px; height: auto">
 <div style="font-family: Fraunces, serif; font-weight: 800; font-size: 24px">Petals and Pasture</div>
 <p style="margin: 0; font-size: 15px; line-height: 1.6">Mini Highland cows and fresh-cut flowers on a little farm in Penticton, BC.</p>
 </div>
@@ -180,14 +225,12 @@ a{color:#8B5A3C}a:hover{color:#5B4636}
 </div>
 </div>
 </footer>
+
 </div>
 <script>
-document.querySelectorAll('[data-send]').forEach(b => b.addEventListener('click', () => {
-  document.getElementById('inquiry-form').hidden = true; document.getElementById('inquiry-thanks').hidden = false;
-}));
-document.querySelectorAll('[data-reset]').forEach(b => b.addEventListener('click', () => {
-  document.getElementById('inquiry-form').hidden = false; document.getElementById('inquiry-thanks').hidden = true;
-}));
+function ppMenu(b){var m=document.getElementById('pp-menu');var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.querySelector('path').setAttribute('d',o?'M6 6l12 12M18 6L6 18':'M4 7h16M4 12h16M4 17h16');}
+function ppSend(){document.getElementById('pp-sent').hidden=false;document.getElementById('pp-form').hidden=true;}
+function ppReset(){document.getElementById('pp-sent').hidden=true;document.getElementById('pp-form').hidden=false;}
 </script>
 </body>
 </html>
